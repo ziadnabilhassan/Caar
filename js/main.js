@@ -48,6 +48,37 @@ owl.owlCarousel({
         }
     }
 });
+ var owl = $('#S2_home');
+owl.owlCarousel({
+    items:4, 
+  // items change number for slider display on desktop
+  
+    loop:true,
+    margin:10,
+    navigation: true,
+    autoplay: true,
+    smartSpeed: 800,
+    ltr:true,
+    nav: false,
+    navElement: "dots",
+    paginationSpeed : 800,
+    dots: false,  
+    dotsEach:true,
+    responsive:{
+        0:{
+            items: 1,
+        },
+        600:{
+            items: 1,
+        },
+        1100:{
+            items: 1,
+        },
+        1200:{
+            items:1
+        }
+    }
+});
     // Mobile Menu Toggle
     const showMenu = (toggleId, navId) => {
       const toggle = document.getElementById(toggleId);

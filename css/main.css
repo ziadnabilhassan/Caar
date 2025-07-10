@@ -91,7 +91,7 @@
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
-      background-image: url('./img/pexels-batuhan-kocabas-123879152-12989552.jpg');
+      background-image: url('/img/pexels-lynxexotics-3764984.jpg');
       background-size: cover;
       line-height: 1.7;
       overflow-x: hidden;
@@ -555,26 +555,7 @@
       position: relative;
     }
 
-    .section-subtitle::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: -60px;
-      width: 40px;
-      height: 1px;
-      background: var(--accent-gradient);
-    }
-
-    .section-subtitle::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      right: -60px;
-      width: 40px;
-      height: 1px;
-      background: var(--accent-gradient);
-    }
-
+   
     .section-title {
       font-size: var(--bigger-font-size);
       color: var(--primary-color);
@@ -1038,7 +1019,6 @@
       border-radius: 20px;
       overflow: hidden;
       position: relative;
-      background: var(--white-color);
       box-shadow: var(--shadow-md);
       transition: var(--transition);
     }
@@ -1046,6 +1026,8 @@
     .fleet-vehicle-card:hover {
       transform: translateY(-10px);
       box-shadow: var(--shadow-xl);
+            background: var(--white-color);
+
     }
 
     .fleet-vehicle-img {
@@ -1485,6 +1467,9 @@
 
       .nav-cta {
         display: block;
+      }
+      .nav-cta li{
+        font-size: small;
       }
 
       .home-container {
@@ -1963,13 +1948,16 @@
   text-align: center;
   height: 300px;
   padding-top: 70px;
+  color:var(--warning-color);
 }
 .intro_sections ul {
   display: flex;
 }
+.intro_sections p {
+  color:black;
+}
 .intro_sections ul a{
   margin: 10px;
-  color: var(--textColor);
 }
 
 .top_foot img{
