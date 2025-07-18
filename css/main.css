@@ -91,7 +91,7 @@
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
-      background-image: url('../img/pexels-lynxexotics-3764984.jpg');
+      background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('../img/pexels-lynxexotics-3764984.jpg');
       background-size: cover;
       line-height: 1.7;
       overflow-x: hidden;
@@ -195,7 +195,17 @@
       color: var(--white-color);
       border-color: transparent;
     }
-
+    .button-outline{
+      margin-top: 2%;
+      margin-left: 1%;
+    }
+.nav-ct{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+        margin-bottom: 1%;
+flex-wrap: wrap;
+}
     .button-small {
       padding: 0.75rem 1.5rem;
       font-size: var(--smaller-font-size);
@@ -257,9 +267,7 @@
       color: var(--secondary-color);
     }
 
-    .nav-cta {
-      display: none;
-    }
+
 
     .nav-menu {
       display: none;
@@ -558,7 +566,7 @@
    
     .section-title {
       font-size: var(--bigger-font-size);
-      color: var(--primary-color);
+      color: #0f172a;
       position: relative;
       display: inline-block;
       margin-bottom: var(--m3);
@@ -1444,10 +1452,11 @@
       .collection-container {
         grid-template-columns: repeat(2, 1fr);
       }
-
       .testimonials-container {
         grid-template-columns: repeat(2, 1fr);
       }
+      
+   
     }
 
     @media screen and (min-width: 768px) {
@@ -1465,9 +1474,7 @@
         gap: var(--m5);
       }
 
-      .nav-cta {
-        display: block;
-      }
+  
       .nav-cta li{
         font-size: small;
       }
@@ -1557,6 +1564,10 @@
         z-index: 100;
       }
 
+      .nav-cta {
+        display: none;
+
+      }
       .nav-menu.show {
         left: 0;
       }
@@ -1954,7 +1965,8 @@
   display: flex;
 }
 .intro_sections p {
-  color:black;
+  color:rgb(252, 252, 252);
+  width: 50vh;
 }
 .intro_sections ul a{
   margin: 10px;
